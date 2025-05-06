@@ -90,7 +90,7 @@ ul li a.active {
 /* FOOTER */
 
 .links {
-  height: 320px;
+  height: 300px;
   background-image: url("./assets/img/footer-bg.jpg");
   display: flex;
   justify-content: space-around;
@@ -130,7 +130,7 @@ h4 {
 .footer-jumbo img {
   width: 100%;
   position: absolute;
-  top: -55px;
+  bottom: -65px;
 
 
 }
@@ -138,4 +138,34 @@ h4 {
 .info-section {
   display: flex;
   width: 30%;
+}
+
+.socials {
+  height: 100px;
+  background-color: rgb(56, 55, 55);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn {
+  all: unset;
+  cursor: pointer;
+  color: white;
+  border: solid #0079F4;
+  padding: 5px;
+  height: 25px;
+}
+
+.follow-us {
+  display: flex;
+}
+
+.follow-us ul li {
+  padding: 10px;
+}
+
+.follow-us h4 {
+  padding: 10px;
+  color: #0079F4;
 }
