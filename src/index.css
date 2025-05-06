@@ -93,12 +93,13 @@ ul li a.active {
   height: 320px;
   background-image: url("./assets/img/footer-bg.jpg");
   display: flex;
+  justify-content: space-around;
 }
 
 .footer-col {
-  flex-basis: calc(100%/10);
+  flex-basis: calc(100%/3);
   flex-shrink: 0;
-  padding: 20px;
+  padding: 10px;
 }
 
 .footer-col ul li {
@@ -116,4 +117,25 @@ h4 {
 .footer-col ul {
   display: block;
   padding-top: 10px;
+}
+
+.footer-jumbo {
+  flex-basis: calc(100%/3);
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.footer-jumbo img {
+  width: 100%;
+  position: absolute;
+  top: -55px;
+
+
+}
+
+.info-section {
+  display: flex;
+  width: 30%;
 }
