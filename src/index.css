@@ -100,12 +100,17 @@ ul li a.active {
 
 .container {
   background-color: black;
-  height: 400px;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card-container {
   display: flex;
   flex-wrap: wrap;
+  padding: 50px;
+  position: relative;
 }
 
 .card-container .com-card {
@@ -127,6 +132,41 @@ ul li a.active {
   color: white;
   text-align: center;
   font-size: 10px;
+  text-transform: uppercase;
+}
+
+.load-button {
+  all: unset;
+  cursor: pointer;
+  color: white;
+  background-color: #0079F4;
+  padding: 10px;
+  width: 150px;
+  display: block;
+
+}
+
+.load-button p {
+  text-align: center;
+  font-weight: 700;
+}
+
+.current-series {
+  all: unset;
+  cursor: pointer;
+  color: white;
+  background-color: #0079F4;
+  padding: 10px;
+  width: 250px;
+  display: block;
+  position: absolute;
+  left: 70px;
+  bottom: 200px;
+}
+
+.current-series P {
+  text-align: center;
+  font-weight: 900;
 }
 
 /* FOOTER */
