@@ -1,12 +1,12 @@
 import React from 'react'
 
-const ComcicCard = (props) => {
+const ComicCard = (props) => {
     return (
         <div className="com-card">
-            <img src={props.image} />
+            <img src={props.src} />
             <h4>{props.title}</h4>
         </div>
     )
 }
 
-export default ComcicCard
+export default ComicCard

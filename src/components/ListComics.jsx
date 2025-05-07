@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ComcicCard from './ComcicCard';
+import ComicCard from './ComicCard';
 
 function ListComics() {
     const comics = [
@@ -161,42 +161,11 @@ function ListComics() {
         <section>
             <div className="container">
                 <div className="card-container">
-                    <ComcicCard image={comics[0].thumb}
-                        title={comics[0].title}
-                    />
-                    <ComcicCard image={comics[1].thumb}
-                        title={comics[1].title}
-                    />
-                    <ComcicCard image={comics[2].thumb}
-                        title={comics[2].title}
-                    />
-                    <ComcicCard image={comics[3].thumb}
-                        title={comics[3].title}
-                    />
-                    <ComcicCard image={comics[4].thumb}
-                        title={comics[4].title}
-                    />
-                    <ComcicCard image={comics[5].thumb}
-                        title={comics[5].title}
-                    />
-                    <ComcicCard image={comics[6].thumb}
-                        title={comics[6].title}
-                    />
-                    <ComcicCard image={comics[7].thumb}
-                        title={comics[7].title}
-                    />
-                    <ComcicCard image={comics[8].thumb}
-                        title={comics[8].title}
-                    />
-                    <ComcicCard image={comics[9].thumb}
-                        title={comics[9].title}
-                    />
-                    <ComcicCard image={comics[10].thumb}
-                        title={comics[10].title}
-                    />
-                    <ComcicCard image={comics[11].thumb}
-                        title={comics[11].title}
-                    />
+                    {comics.map((comic) => {
+
+                        return <ComicCard key={`id = ${comic.id}`} src={comic.thumb} title={comic.title} />
+
+                    })}
 
                 </div>
                 <button className='load-button'>
