@@ -1,6 +1,70 @@
 import React from 'react'
 
 const Header = () => {
+
+    const links = [
+        {
+            id: 1,
+            href: "#",
+            label: "Characters",
+            current: false,
+        },
+        {
+            id: 2,
+            href: "#",
+            label: "Comics",
+            current: true,
+        },
+        {
+            id: 3,
+            href: "#",
+            label: "Movies",
+            current: false,
+        },
+        {
+            id: 4,
+            href: "#",
+            label: "TV",
+            current: false,
+        },
+        {
+            id: 4,
+            href: "#",
+            label: "Games",
+            current: false,
+        },
+        {
+            id: 4,
+            href: "#",
+            label: "Collectibles",
+            current: false,
+        },
+        {
+            id: 4,
+            href: "#",
+            label: "Videos",
+            current: false,
+        },
+        {
+            id: 4,
+            href: "#",
+            label: "Fans",
+            current: false,
+        },
+        {
+            id: 4,
+            href: "#",
+            label: "News",
+            current: false,
+        },
+        {
+            id: 4,
+            href: "#",
+            label: "Shop",
+            current: false,
+        }
+    ]
+
     return (
         <header>
             <figure>
@@ -8,36 +72,16 @@ const Header = () => {
             </figure>
             <nav>
                 <ul>
-                    <li>
-                        <a href="#">CHARACTERS</a>
-                    </li>
-                    <li>
-                        <a href="#" className='active'>COMICS</a>
-                    </li>
-                    <li>
-                        <a href="#">MOVIES</a>
-                    </li>
-                    <li>
-                        <a href="#">TV</a>
-                    </li>
-                    <li>
-                        <a href="#">GAMES</a>
-                    </li>
-                    <li>
-                        <a href="#">COLLECTIBLES</a>
-                    </li>
-                    <li>
-                        <a href="#">VIDEOS</a>
-                    </li>
-                    <li>
-                        <a href="#">FANS</a>
-                    </li>
-                    <li>
-                        <a href="#">NEWS</a>
-                    </li>
-                    <li>
-                        <a href="#">SHOP</a>
-                    </li>
+                    {links.map((link) => {
+                        const { href, label, current } = link
+                        return <li key={`item ${link.id}`}>
+                            <a href={href} className={current ? 'active' : ''}>
+                                {label}
+
+                            </a>
+                        </li>
+
+                    })}
                 </ul>
             </nav>
         </header>
